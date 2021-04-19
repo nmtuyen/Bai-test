@@ -7,8 +7,8 @@
 <body>
 <script>
 
-    let a = +prompt('Nhập số cẩn kiểm tra')
-    function check_so_hoan_hao() {
+
+    function check_so_hoan_hao(a) {
         let sum = 0;
         for (i = 1; i <= a/2; i++){
             if (a % i === 0){
@@ -20,7 +20,7 @@
         }else
             document.write(a +'không là số hoàn hảo')
     }
-    check_so_hoan_hao()
+    check_so_hoan_hao(+prompt('Nhập số cẩn kiểm tra'))
 
 </script>
 
