@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let a = +prompt('Nhập số cẩn kiểm tra')
+    function check_so_hoan_hao() {
+        let sum = 0;
+        for (i = 1; i <= a/2; i++){
+            if (a % i === 0){
+                sum += i
+            }
+        }
+        if ( sum === a){
+            document.write(a + 'là số hoàn hảo');
+        }else
+            document.write(a +'không là số hoàn hảo')
+    }
+    check_so_hoan_hao()
+
+</script>
+
+</body>
+</html>
